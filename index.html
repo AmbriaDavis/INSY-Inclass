@@ -221,6 +221,43 @@
       background-color: #fdfaf6;
     }
 
+    /* Urgent Red "Needs Reorder" Summary Box */
+    #cardReorder {
+      background-color: #b3261e;
+      border: 1px solid #8c1d18;
+      box-shadow: 0 4px 12px rgba(179, 38, 30, 0.22);
+    }
+
+    #cardReorder:hover {
+      background-color: #9c1f18;
+      border-color: #731713;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(179, 38, 30, 0.3);
+    }
+
+    #cardReorder.active-filter {
+      border: 2px solid #ffffff;
+      box-shadow: 0 0 0 3px #b3261e, 0 6px 16px rgba(179, 38, 30, 0.3);
+      background-color: #9c1f18;
+    }
+
+    #cardReorder .badge-reorder {
+      background-color: rgba(255, 255, 255, 0.22);
+      color: #ffffff;
+    }
+
+    #cardReorder .metric-info h3 {
+      color: #ffe6e4;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+
+    #cardReorder .metric-number {
+      color: #ffffff;
+      font-weight: 800;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    }
+
     .metric-badge {
       width: 42px;
       height: 42px;
@@ -404,6 +441,12 @@
       font-weight: 600;
     }
 
+    .filter-pill#pill-reorder.active {
+      background: #b3261e;
+      border-color: #8c1d18;
+      color: #fff;
+    }
+
     /* Item Cards */
     .items-container {
       display: flex;
@@ -442,7 +485,9 @@
 
     .item-card.needs-reorder {
       border-left: 6px solid var(--danger);
-      background-color: #fffdfd;
+      border-color: #f5c2c0;
+      background-color: #fdf2f2;
+      box-shadow: 0 2px 8px rgba(179, 38, 30, 0.08);
     }
 
     .item-card.stocked {
@@ -494,8 +539,9 @@
     }
 
     .status-reorder {
-      background: #feebe8;
-      color: var(--danger);
+      background: #b3261e;
+      color: #ffffff;
+      box-shadow: 0 1px 3px rgba(179, 38, 30, 0.25);
     }
 
     .status-ok {
